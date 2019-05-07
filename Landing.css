@@ -1,0 +1,57 @@
+@import "reset.css";
+
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+#left {
+    flex: 1 1 50vw;
+    background-color: #606B9B;
+    height: 100vh;
+    padding: 8vh 8vw;
+    box-shadow: 2vw 0 2vw #969696;
+}
+
+#right {
+    flex: 1 1 50vw;
+    height: 100vh;
+    padding: 8vh 8vw;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60pt;
+    color: white;
+    vertical-align: center;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35pt;
+    color: #70C7A9;
+}
+
+#signIntro {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50pt;
+    color: #606B9B;
+}
+
+input {
+    font-size: 25pt;
+    background-color: lightgray;
+    color: #969696;
+    border: none;
+}
+
+button {
+    font-family: Helvetica,sans-serif;
+    font-size: 25pt;
+    background-color: #70C7A9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
