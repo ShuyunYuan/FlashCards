@@ -1,0 +1,44 @@
+@import "reset.css";
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 70pt;
+    color: #606B9B;;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    border: 1px;
+    box-shadow: 1vw 2px 1vw #969696;
+    font-size: 30pt;
+    font-family: Helvetica, sans-serif;
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+    font-size: 25pt;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#start {
+    background-color: #606B9B;
+}
+
+#save {
+    background-color: #70C7A9;
+}
+
+footer {
+    background-color: #606B9B;
+    height: 20px;
+}
