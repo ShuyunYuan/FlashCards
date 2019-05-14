@@ -8,15 +8,21 @@ body {
 
 #left {
     flex: 1 1 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content:center;
     background-color: #606B9B;
-    height: 100vh;
     padding: 8vh 8vw;
     box-shadow: 2vw 0 2vw #969696;
 }
 
 #right {
     flex: 1 1 50vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content:center;
     padding: 8vh 8vw;
 }
 
@@ -24,19 +30,21 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 60pt;
     color: white;
-    vertical-align: center;
+    margin: 0.3em 0;
 }
 
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 35pt;
     color: #70C7A9;
+    margin: 0.3em 0;
 }
 
 #signIntro {
     font-family: 'Raleway', sans-serif;
     font-size: 50pt;
     color: #606B9B;
+    margin: 0.3em 0;
 }
 
 input {
@@ -44,6 +52,8 @@ input {
     background-color: lightgray;
     color: #969696;
     border: none;
+    margin: 0.3em 0;
+    padding: 0.3em 0.6em;
 }
 
 button {
@@ -55,3 +65,9 @@ button {
     border-radius: 5px;
 }
 
+#login {
+    padding: 0.3em 0.6em;
+    margin: 0.3em 0;
+    width: 4em;
+    align-self: flex-end;
+}
