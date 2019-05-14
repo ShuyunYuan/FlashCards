@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content:center;
+    justify-content: center;
     background-color: #606B9B;
     padding: 8vh 8vw;
     box-shadow: 2vw 0 2vw #969696;
@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content:center;
+    justify-content: center;
     padding: 8vh 8vw;
 }
 
@@ -57,17 +57,16 @@ input {
 }
 
 button {
-    font-family: Helvetica,sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 25pt;
-    background-color: #70C7A9;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.4em;
+    padding: 0.3em 1.2em;
+    margin: 0.3em 0;
 }
 
 #login {
-    padding: 0.3em 0.6em;
-    margin: 0.3em 0;
-    width: 4em;
+    background-color: #70C7A9;
     align-self: flex-end;
 }
