@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    background-color: #606B9B;
+    background: linear-gradient(to bottom right, #606B9B,  #B191D4);
     padding: 8vh 8vw;
     box-shadow: 2vw 0 2vw #969696;
 }
@@ -69,4 +69,8 @@ button {
 #login {
     background-color: #70C7A9;
     align-self: flex-end;
+}
+
+#my-signin2 {
+    background-image: url("image");
 }
