@@ -42,7 +42,7 @@ h1 {
 }
 
 input {
-/*    border: none;*/
+    /*    border: none;*/
     justify-content: center;
 }
 
@@ -57,6 +57,7 @@ button {
 }
 
 #start {
+    position: absolute;
     background-color: #606B9B;
     float: left;
 }
@@ -67,6 +68,15 @@ button {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #606B9B;
     height: 1.8em;
+    font-size: 25pt;
+}
+
+#footer-name {
+    color: white;
+    font-family: Helvetica, sans-serif;
 }
