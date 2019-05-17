@@ -26,7 +26,7 @@ let requestObject =
 	"source": "en",
 	"target": "zh-CN",
 	"q": [
-	    "example phrase"
+	    "example phrase" // user input english phrase
 	]
     }
 
@@ -71,6 +71,7 @@ APIrequest(
 db.get('SELECT * FROM Flashcards WHERE seen>5', dataCallback);
 db.all('SELECT * FROM Flashcards WHERE user = 133', arrayCallback);
 
+//store new card in database
 function createNewcard(eng, chi) {
     const cmdStr_in = 'INSERT into Flashcards(user, english, chinese, seen, correct) VALUES (133, @0, @1, 10, 2)';
     db.run(cmdStr_in, eng, chi, insertCallback);
