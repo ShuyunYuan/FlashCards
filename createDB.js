@@ -10,15 +10,15 @@ const db = new sqlite3.Database(dbFileName);  // object, not database.
 // If the table already exists, causes an error.
 // Fix the error by removing or renaming Flashcards.db
 const cmdStr = 'CREATE TABLE Flashcards (user INT, english TEXT, chinese TEXT, seen INT, correct INT)';
-//db.run(cmdStr,tableCreationCallback);
+db.run(cmdStr,tableCreationCallback);
 
-const eng = "hello";
-const chi = "你好";
-const cmdStr_in = 'INSERT into Flashcards(user, english, chinese, seen, correct) VALUES (133, @0, @1, 10, 2)';
-db.run(cmdStr_in, eng, chi, insertCallback);
-
-db.get('SELECT * FROM Flashcards WHERE seen>5', dataCallback);
-db.all('SELECT * FROM Flashcards WHERE user = 133', arrayCallback);
+function createCard(eng, chi, id) {
+    const cmdStr_in = 'INSERT into Flashcards(user, english, chinese, seen, correct) VALUES (@0, @1, @2, 0, 0)';
+    db.run(cmdStr_in, id, eng, chi, insertCallback);
+    //db.get('SELECT * FROM Flashcards WHERE user = ', dataCallback);
+    //const cmdStr_get = 'SELECT * FROM Flashcards WHERE user = @0';
+    db.all('SELECT * FROM Flashcards WHERE user = @0', id, arrayCallback);
+}
 
 // Always use the callback for database operations and print out any
 // error messages you get.
@@ -55,3 +55,5 @@ function arrayCallback(err, arrayData) {
         console.log("array: ", arrayData, "\n");
     }
 }
+
+exports.createCard = createCard;
