@@ -1,5 +1,110 @@
 @import "reset.css";
 
+/*Mobile*/
+@media (max-width: 768px) {
+
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30pt;
+        color: #606B9B;
+        margin-top: 15px;
+    }
+
+    .main {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .cards {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0;
+    }
+
+    /*TODO: set input-height && width same as card*/
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        border: 1px #969696;
+        font-size: 20pt;
+        font-family: Helvetica, sans-serif;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    input {
+        /*    border: none;*/
+        height: inherit;
+        width: inherit;
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    button {
+        font-family: Helvetica, sans-serif;
+        color: white;
+        border: none;
+        border-radius: 0.4em;
+        padding: 8px 22px;
+    }
+
+    #start {
+        font-size: 12pt;
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        background-color: #606B9B;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    #save {
+        font-size: 17pt;
+        background-color: #70C7A9;
+        align-self: flex-end;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #606B9B;
+        height: 1.8em;
+        font-size: 17pt;
+    }
+
+    #footer-name {
+        color: white;
+        font-family: Helvetica, sans-serif;
+    }
+
+}
+
+/*Tablet*/
+/*@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}*/
+
+/*Web*/
+/*
 body {
     min-height: 100vh;
     display: flex;
@@ -14,7 +119,7 @@ h1 {
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 70pt;
-    color: #606B9B;;
+    color: #606B9B;
 }
 
 .main {
@@ -42,7 +147,7 @@ h1 {
 }
 
 input {
-    /*    border: none;*/
+    !*    border: none;*!
     justify-content: center;
 }
 
@@ -79,4 +184,4 @@ footer {
 #footer-name {
     color: white;
     font-family: Helvetica, sans-serif;
-}
+}*/
