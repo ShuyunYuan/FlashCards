@@ -55,8 +55,7 @@ class CreateCardMain extends React.Component {
 	}
 	render() {
 		return (<main>
-		<button id="start">Start Review</button>
-		<h1 id="logo">Lango!</h1>
+		<h1 id="logo"><button id="start">Start Review</button> Lango! </h1>
 		<div className="cards">
 			<div className="card">
 	          	<textarea value={this.state.input} onChange={this.changeText.bind(this)} onKeyPress={this.checkReturn}/>
@@ -65,7 +64,10 @@ class CreateCardMain extends React.Component {
 	 			<textarea readOnly value={this.state.value}/>
 	 		</div>
 		</div>
-		<button id="save" onClick={this.saveCard.bind(this)}>Save</button>
+		<div className="saveButton">
+			<button id="save" onClick={this.saveCard.bind(this)}>Save</button>
+		</div>
+		<footer><span id="footer-name">User Name</span></footer>
 	</main>);
 	}
 
