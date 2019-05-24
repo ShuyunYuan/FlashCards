@@ -1,199 +1,88 @@
-@import "reset.css";
+@import "../reset.css";
 
-/*Mobile*/
-@media (max-width: 768px) {
-
-    body {
-        min-height: 100vh;
-        min-width: 100vw;
-        /*display: flex;
-        flex-direction: column;*/
-    }
-
-    #root {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-    }
-    h1 {
-        text-align: center;
-        margin: 20px 30px 5vh 30px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 30pt;
-        color: #606B9B;
-        font-weight: 900;
-    }
-/*
-    .top {
-        
-        display: flex;
-        flex-direction: row;
-    }*/
-
-    main {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-width: 100%;
-        min-height: 100%;
-    }
-
-    .cards {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 0;
-    }
-
-    /*TODO: set input-height && width same as card*/
-    .card {
-        display: flex;
-        flex-direction: column;
-        /*justify-content: center;*/
-        border: solid 1px #969696;
-        flex-grow: 1;
-        /*border: 1px #969696;*/
-        font-size: 1.0em;
-        /*color: #969696;*/
-        font-family: Helvetica, sans-serif;
-        margin: 10px 10px;
-        justify-content: center;
-        
-    }
-
-    .saveButton {
-        display: flex;
-        justify-content: flex-end;
-        margin: 1vh 10vw 2vh 10vw;
-    }
-
-    textarea {
-        border: none;
-        display: flex;
-        flex-direction: column;
-        height: inherit;
-        width: inherit;
-        font-size: 20pt;
-        color: #969696;
-        text-align: center;
-    }
-
-    button {
-        font-family: Helvetica, sans-serif;
-        color: white;
-        border: none;
-        border-radius: 0.4em;
-        padding: 8px 22px;
-    }
-
-    #start {
-        font-size: 12pt;
-        position: absolute;
-        top: 20px;
-        left: 16px;
-        background-color: #606B9B;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    #save {
-        font-size: 17pt;
-        background-color: #70C7A9;
-        align-self: flex-end;
-    }
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #606B9B;
-        height: 1.8em;
-        font-size: 17pt;
-    }
-
-    #footer-name {
-        color: white;
-        font-family: Helvetica, sans-serif;
-    }
-}
-
-/*Tablet*/
-/*@media (min-width: 768px) and (max-width: 1024px) {
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-}*/
-
-/*Web*/
-/*
-body {
-    min-height: 100vh;
+#root {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-header {
-    padding: 3vh 0;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 70pt;
-    color: #606B9B;
-}
-
-.main {
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: 3vh 3vw;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*Mobile*/
+
+h1 {
+    text-align: center;
+    margin: 20px 30px 5vh 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70pt;
+    color: #606B9B;
+    font-weight: 900;
 }
 
 .cards {
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    margin: 1.8em 3em;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #969696;
     flex-grow: 1;
-    border: 1px #969696;
-    box-shadow: 1vw 2px 1vw #969696;
-    font-size: 30pt;
-    font-family: Helvetica, sans-serif;
-    margin: 0 0.6em;
-    text-align: center;
+    font-size: 20pt;
+    margin: 10px 10px;
+    justify-content: center;
 }
 
-input {
-    !*    border: none;*!
-    justify-content: center;
+.saveButton {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1vh 10vw 2vh 10vw;
+}
+
+textarea {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    height: inherit;
+    width: inherit;
+    font-size: 20pt;
+    color: #969696;
+    text-align: center;
 }
 
 button {
     font-family: Helvetica, sans-serif;
-    font-size: 25pt;
     color: white;
     border: none;
     border-radius: 0.4em;
-    padding: 0.3em 1.2em;
-    margin: 0.3em 2.4em;
+    padding: 8px 22px;
 }
 
 #start {
+    font-size: 12pt;
     position: absolute;
+    top: 20px;
+    left: 16px;
     background-color: #606B9B;
-    float: left;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 #save {
+    font-size: 17pt;
     background-color: #70C7A9;
     align-self: flex-end;
 }
@@ -204,10 +93,109 @@ footer {
     align-items: center;
     background-color: #606B9B;
     height: 1.8em;
-    font-size: 25pt;
+    font-size: 17pt;
 }
 
 #footer-name {
     color: white;
     font-family: Helvetica, sans-serif;
-}*/
+}
+
+
+/*Tablet, same as web*/
+@media (min-width: 768px) {
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 3vh 0;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 70pt;
+        color: #606B9B;
+        font-weight: 900;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        margin: 1.8em 3em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 42vh;
+    }
+
+    textarea {
+        font-size: 30pt;
+        flex-grow: 1;
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        height: 42vh;
+        width: 40vw;
+        color: #969696;
+    }
+
+    button {
+        font-family: Helvetica, sans-serif;
+        font-size: 25pt;
+        color: white;
+        border: none;
+        border-radius: 0.4em;
+        padding: 0.3em 1.2em;
+        margin: 0.3em 1em;
+    }
+
+    #start {
+        background-color: #606B9B;
+        font-size: 25pt;
+        float: left;
+        padding: 0.3em 0.6em;
+    }
+
+    .saveButton {
+        background-color: #70C7A9;
+        align-self: flex-end;
+        border-radius: 0.4em;
+        font-size: 25pt;
+    }
+
+    #save {
+        align-self: flex-end;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #606B9B;
+        height: 1.8em;
+        font-size: 25pt;
+        margin-top: 3vh;
+    }
+
+    #footer-name {
+        color: white;
+        font-family: Helvetica, sans-serif;
+    }
+}
+

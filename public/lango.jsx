@@ -40,7 +40,7 @@ class CreateCardMain extends React.Component {
 		this.checkReturn = this.checkReturn.bind(this);
 	}
 	checkReturn(event) {
-		if (event.charCode == 13) {
+		if (event.charCode === 13) {
 			sendTranslate(this.callback.bind(this), this.state.input);
 		} 
 	}
@@ -57,10 +57,10 @@ class CreateCardMain extends React.Component {
 		return (<main>
 		<h1 id="logo"><button id="start">Start Review</button> Lango! </h1>
 		<div className="cards">
-			<div className="card">
+			<div className="card" id="English">
 	          	<textarea value={this.state.input} onChange={this.changeText.bind(this)} onKeyPress={this.checkReturn}/>
 		  	</div>
-			<div className="card">
+			<div className="card" id="Translation">
 	 			<textarea readOnly value={this.state.value}/>
 	 		</div>
 		</div>
