@@ -1,2 +1,10 @@
 .idea
 .git
+node_modules/
+package-lock.json
+public/node_modules/
+public/package-lock.json
+public/package.json
+public/lango.js
+Flshcard.db
+
