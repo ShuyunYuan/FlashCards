@@ -1,0 +1,26 @@
+var landing = React.createClass({
+    render: function() {
+        return (
+            <div>
+                <meta charSet="UTF-8" />
+                <title>Welcome to Lango: Customize your vocabulary</title>
+                <meta name="viewport" content="width=device-width" />
+                <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com" />
+                <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Raleway:900" rel="stylesheet" />
+                <link rel="stylesheet" type="text/css" href="login.css" />
+                <section id="left">
+                    <h1>Welcome to Lango!</h1>
+                    <h2>Customize your vocabulary!</h2>
+                </section>
+                <section id="right">
+                    <button id="login">
+                        <img id="icon" src="google.jpg" />
+                        <div id="btn_p">
+                            Login with Google!
+                        </div>
+                    </button>
+                </section>
+            </div>
+        );
+    }
+});

@@ -1,10 +1,9 @@
-# flashCards
-Flash Card Creator for Chinese-English translation
+# FlashCards
 
-## Specified Colors
-pruple: #606B9B  
-green: #70C7A9  
-gray: #969696
+A web app that creates flashcards for Chinses-English translation.
+ 
+Built responsive user interface with React and used Express as server-side framework.
 
-## API Key
-***REMOVED***
+Implemented translation functionality, third-party login and set up database using Google Translate API, Google OAuth 2.0 and SQLite, etc.
+
+Configured and deployed on a DigitalOcean droplet running Ubuntu.

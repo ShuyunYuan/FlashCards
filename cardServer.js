@@ -48,7 +48,6 @@ app.get('/translate', engHandler);   // if not, is it a valid query?
 app.get('/store', dbHandler);
 app.use(fileNotFound);            // otherwise not found
 
-
 app.listen(port, function () {
     console.log('Listening...');
 });

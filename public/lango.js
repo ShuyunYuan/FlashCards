@@ -59,7 +59,7 @@ var CreateCardMain = function (_React$Component) {
 	_createClass(CreateCardMain, [{
 		key: 'checkReturn',
 		value: function checkReturn(event) {
-			if (event.charCode == 13) {
+			if (event.charCode === 13) {
 				sendTranslate(this.callback.bind(this), this.state.input);
 			}
 		}
@@ -85,33 +85,46 @@ var CreateCardMain = function (_React$Component) {
 				'main',
 				null,
 				React.createElement(
-					'button',
-					{ id: 'start' },
-					'Start Review'
-				),
-				React.createElement(
 					'h1',
 					{ id: 'logo' },
-					'Lango!'
+					React.createElement(
+						'button',
+						{ id: 'start' },
+						'Start Review'
+					),
+					' Lango! '
 				),
 				React.createElement(
 					'div',
 					{ className: 'cards' },
 					React.createElement(
 						'div',
-						{ className: 'card' },
+						{ className: 'card', id: 'English' },
 						React.createElement('textarea', { value: this.state.input, onChange: this.changeText.bind(this), onKeyPress: this.checkReturn })
 					),
 					React.createElement(
 						'div',
-						{ className: 'card' },
+						{ className: 'card', id: 'Translation' },
 						React.createElement('textarea', { readOnly: true, value: this.state.value })
 					)
 				),
 				React.createElement(
-					'button',
-					{ id: 'save', onClick: this.saveCard.bind(this) },
-					'Save'
+					'div',
+					{ className: 'saveButton' },
+					React.createElement(
+						'button',
+						{ id: 'save', onClick: this.saveCard.bind(this) },
+						'Save'
+					)
+				),
+				React.createElement(
+					'footer',
+					null,
+					React.createElement(
+						'span',
+						{ id: 'footer-name' },
+						'User Name'
+					)
 				)
 			);
 		}

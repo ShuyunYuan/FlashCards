@@ -1,0 +1,173 @@
+@import "reset.css";
+
+/*Web version*/
+body {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+#left {
+    flex: 1 1 50vw;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #606B9B, #B191D4);
+    box-shadow: 2vw 0 2vw lightgray;
+}
+
+#right {
+    flex: 1 1 50vw;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60pt;
+    color: white;
+    margin: 0.3em 9vw;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35pt;
+    color: #70C7A9;
+    margin: 0.3em 9vw;
+}
+
+/*#signIntro {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50pt;
+    color: #606B9B;
+    margin: 0.3em 0;
+}
+
+input {
+    font-size: 25pt;
+    background-color: lightgray;
+    color: #969696;
+    border: none;
+    margin: 0.3em 0;
+    padding: 0.3em 0.6em;
+}*/
+
+/*button {
+    font-family: Helvetica, sans-serif;
+    font-size: 25pt;
+    color: white;
+    background-color: #70C7A9;
+    border: none;
+    padding: 0.3em 1.2em;
+    margin: 0.3em 0;
+}*/
+/*
+
+#login {
+    background-color: #70C7A9;
+    align-self: flex-end;
+}
+*/
+
+#icon {
+    height: 60px;
+    margin: 10px 16px 10px 0;
+}
+
+#login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25pt;
+    color: white;
+    background-color: #70C7A9;
+    border: none;
+    width: 400px;
+}
+
+/*Tablet version*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 75pt;
+    }
+
+    #left {
+
+        flex-basis: 80vh;
+        box-shadow: 0 30px 30px lightgray;
+    }
+
+    #right {
+        flex-basis: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8vh 24vw;
+    }
+
+    #login {
+
+        width: 420px;
+    }
+
+    img {
+        height: 60px;
+        margin: 10px 30px 10px 0;
+    }
+}
+
+/*Mobile version*/
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
+        padding: 0;
+    }
+
+    #left {
+        flex:1 1 72vh;
+        box-shadow: 0 30px 30px lightgray;
+    }
+
+    #right {
+        flex-basis: 12vh;
+        padding: 8vh 14vw;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 45pt;
+    }
+
+    h2 {
+        font-size: 22pt;
+    }
+
+    #login {
+        font-size: 20pt;
+        width: 300px;
+    }
+
+    img {
+        height: 40px;
+        margin: 10px 10px 10px 0;
+    }
+}
